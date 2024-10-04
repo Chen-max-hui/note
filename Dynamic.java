@@ -9,8 +9,8 @@ public class Dynamic {
             }
 
         }
-        
-        return process(grid, grid.length - 1,grid[0].length - 1,dp);
+
+        return process(grid, grid.length - 1, grid[0].length - 1, dp);
     }
 
     public static int process(int[][] grid, int i, int j, int[][] dp) {
@@ -30,7 +30,7 @@ public class Dynamic {
         if (i > 0) {
             right = process(grid, i - 1, j, dp);
         }
-        ans = grid[i][j]+Math.min(down, right);
+        ans = grid[i][j] + Math.min(down, right);
         dp[i][j] = ans;
         return ans;
     }
