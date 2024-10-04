@@ -34,14 +34,4 @@ public class MiniStack {
     public int getMin() {
         return stackMin.peek();
     }
-
-    public static void main(String[] args) {
-        MiniStack stack = new MiniStack();
-        stack.push(5);
-        stack.push(7);
-        stack.push(2);
-        stack.push(1);
-        stack.push(9);
-        System.out.println(stack.getMin());
-    }
 }
